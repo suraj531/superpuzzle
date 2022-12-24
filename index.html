@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sliding Puzzle</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  </head>
+
+  <body>
+    <figure class="sliding-puzzle-figure">
+      <ul class="sliding-puzzle p-5">
+        <li class="tile ml-5">1</li>
+        <li class="tile ml-5">2</li>
+        <li class="tile ml-5">3</li>
+        <li class="tile ml-5">4</li>
+        <li class="tile ml-5">5</li>
+        <li class="tile ml-5">6</li>
+        <li class="tile ml-5">7</li>
+        <li class="tile ml-5">8</li>
+      </ul>
+
+      <figcaption>
+        A Super Puzzle | <a id="shuffle">Shuffle</a> | <a id="solve">Solve</a>
+      </figcaption>
+    </figure>
+
+    <div class="container">
+      <h1 class="form-heading">Add User</h1>
+      <form id="myForm">
+        <div class="mb-3">
+          <label for="name">Email</label>
+          <input type="text" class="form-control" id="name" />
+          <p id="nameErrMsg" class="error-message"></p>
+        </div>
+        <div class="mb-3">
+          <label for="email">Password</label>
+          <input type="password" class="form-control" id="email" />
+          <p id="emailErrMsg" class="error-message"></p>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>
